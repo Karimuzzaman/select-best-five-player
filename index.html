@@ -137,26 +137,32 @@
                             <h2 class="text-3xl text-center font-bold">Budget</h2>
                             <br>
                             <div class="p-5 inline-flex ml-10">
+                                <!-- per player -->
                                 <h2 class=" text-xl text-bold">Per Player</h2>
                                 <input id="per-player-field" class="ml-3 border-2 border-black" type="text">
                             </div>
+                            <!-- Calculate button -->
                             <button id="btn-calculate" class="btn btn-wide ml-20">Calculate</button>
                             <div class="ml-20 mt-3 text-xl">
                                 <!-- player Expenses -->
                                 <p>Player Expenses: <span>$</span><span id="player-expenses"></span></p>
 
                             </div>
+                            <!-- manager -->
                             <div class="p-5 inline-flex ml-10">
                                 <h2 class=" text-xl text-bold">Manager</h2>
-                                <input class="ml-3 border-2 border-black" type="text">
+                                <input id="manager-field" class="ml-3 border-2 border-black" type="text">
                             </div>
+                            <!-- coach -->
                             <div class="inline-flex ml-20 mb-5">
                                 <h2 class=" text-xl text-bold">Coach</h2>
-                                <input class="ml-3 border-2 border-black" type="text">
+                                <input id="coach-field" class="ml-3 border-2 border-black" type="text">
                             </div>
-                            <button class="btn btn-wide ml-20">Calculate Total</button>
+                            <!-- total calculation button -->
+                            <button id="btn-calculate-total" class="btn btn-wide ml-20">Calculate Total</button>
+                            <!-- total calculation -->
                             <div class="ml-20 mt-3 text-xl">
-                                <p>Player Expenses: <span>$</span><span></span></p>
+                                <p>Total: <span>$</span><span id="total"></span></p>
                             </div>
                         </div>
                     </div>
@@ -181,8 +187,10 @@
         </div>
 
     </footer>
+    <script src="js/utility.js"></script>
     <script src="js/app.js"></script>
     <script src="js/budget.js"></script>
+    <script src="js/cost-total.js"></script>
 </body>
 
 </html>
