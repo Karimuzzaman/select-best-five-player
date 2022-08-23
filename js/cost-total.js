@@ -3,9 +3,7 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
 
     const coachCost = inputField('coach-field');
 
-    const playerExpensesElement = document.getElementById('player-expenses');
-    const playerExpensesString = playerExpensesElement.innerText;
-    const playerExpenses = parseInt(playerExpensesString);
+    const playerExpenses = textField('player-expenses');
 
     const totalCost = managerCost + coachCost + playerExpenses;
 
