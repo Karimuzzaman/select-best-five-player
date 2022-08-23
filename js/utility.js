@@ -1,17 +1,17 @@
-function calculatePlayer(element) {
+function textField(element) {
 
-    const selectedPlayer = document.getElementById(element);
-    const totalPlayerString = selectedPlayer.innerText;
-    const totalPlayer = parseInt(totalPlayerString);
-    return totalPlayer;
+    const textFieldElement = document.getElementById(element);
+    const textFieldEString = textFieldElement.innerText;
+    const textFieldValue = parseInt(textFieldEString);
+    return textFieldValue;
 
 }
 
-function playerCost(element) {
+function inputField(element) {
 
-    const perPlayerField = document.getElementById(element);
-    const perPlayerValueString = perPlayerField.value;
-    const perPlayerCost = parseInt(perPlayerValueString);
-    return perPlayerCost;
+    const inputField = document.getElementById(element);
+    const inputFieldValueString = inputField.value;
+    const inputFieldValue = parseInt(inputFieldValueString);
+    return inputFieldValue;
 
 }

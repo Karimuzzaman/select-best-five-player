@@ -1,7 +1,7 @@
 document.getElementById('btn-calculate-total').addEventListener('click', function () {
-    const managerCost = playerCost('manager-field');
+    const managerCost = inputField('manager-field');
 
-    const coachCost = playerCost('coach-field');
+    const coachCost = inputField('coach-field');
 
     const playerExpensesElement = document.getElementById('player-expenses');
     const playerExpensesString = playerExpensesElement.innerText;

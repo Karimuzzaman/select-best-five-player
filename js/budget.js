@@ -3,9 +3,9 @@
 document.getElementById('btn-calculate').addEventListener('click', function () {
 
 
-    const totalPlayer = calculatePlayer('selected-player');
+    const totalPlayer = textField('selected-player');
 
-    const perPlayerCost = playerCost('per-player-field');
+    const perPlayerCost = inputField('per-player-field');
 
     const costTotalPlayer = totalPlayer * perPlayerCost;
 
