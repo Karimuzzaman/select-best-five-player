@@ -120,16 +120,19 @@
                     </div>
                     <!-- curs ends -->
                 </div>
+                <!-- selected player -->
                 <div class="ml-20">
                     <div class="grid grid-rows-2 grid-flow-col gap-4">
                         <div class="border">
-                            <h2 class="text-3xl font-semibold text-center">Select V</h2>
+                            <h2 class="text-3xl font-semibold text-center">Select <span id="selected-player"></span>
+                            </h2>
                             <div>
                                 <ol id="player-list" class="list-decimal ml-10">
                                 </ol>
                             </div>
 
                         </div>
+                        <!-- cost calculation -->
                         <div class="border">
                             <h2 class="text-3xl text-center font-bold">Budget</h2>
                             <br>
@@ -137,7 +140,7 @@
                                 <h2 class=" text-xl text-bold">Per Player</h2>
                                 <input class="ml-3 border-2 border-black" type="text">
                             </div>
-                            <button class="btn btn-wide ml-20">Calculate</button>
+                            <button id="btn-01" class="btn btn-wide ml-20">Calculate</button>
                             <div class="ml-20 mt-3 text-xl">
                                 <p>Player Expenses: <span>$</span><span>5000</span></p>
 
