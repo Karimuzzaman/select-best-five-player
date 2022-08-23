@@ -123,47 +123,51 @@
                 <!-- selected player -->
                 <div class="ml-20">
                     <div class="grid grid-rows-2 grid-flow-col gap-4">
-                        <div class="border">
-                            <h2 class="text-3xl font-semibold text-center">Selected-V-<span id="selected-player"></span>
+                        <div class="border border-slate-900 bg-zinc-300">
+                            <h2 class="text-3xl font-bold text-center">Selected-V-<span id="selected-player"></span>
                             </h2>
                             <div>
                                 <!-- order list -->
-                                <ol id="player-list" class="list-decimal ml-10">
+                                <ol id="player-list" class="list-decimal ml-10 font-bold">
                                 </ol>
                             </div>
 
                         </div>
                         <!-- cost calculation -->
-                        <div class="border">
+                        <div class="border border-gray-900 bg-emerald-200">
                             <h2 class="text-3xl text-center font-bold">Budget</h2>
                             <br>
                             <div class="p-5 inline-flex ml-10">
                                 <!-- per player -->
-                                <h2 class=" text-xl text-bold">Per Player</h2>
-                                <input id="per-player-field" class="ml-3 border-2 border-black" type="text">
+                                <h2 class="ml-20 text-xl font-bold">Per Player</h2>
+                                <input id="per-player-field" class="ml-3 border-2 border-black pl-2 font-semibold"
+                                    type="text" placeholder="please enter number">
                             </div>
                             <!-- Calculate button -->
-                            <button id="btn-calculate" class="btn btn-wide ml-20">Calculate</button>
+                            <button id="btn-calculate" class="btn btn-wide ml-40">Calculate</button>
                             <div class="ml-20 mt-3 text-xl">
                                 <!-- player Expenses -->
-                                <p>Player Expenses: <span>$</span><span id="player-expenses"></span></p>
+                                <p class="ml-20 font-bold">Player Expenses: <span>$</span><span
+                                        id="player-expenses"></span></p>
 
                             </div>
                             <!-- manager -->
                             <div class="p-5 inline-flex ml-10">
-                                <h2 class=" text-xl text-bold">Manager</h2>
-                                <input id="manager-field" class="ml-3 border-2 border-black" type="text">
+                                <h2 class="ml-20 text-xl font-bold">Manager</h2>
+                                <input id="manager-field" class="ml-3 border-2 border-black pl-2 font-semibold"
+                                    type="text" placeholder="please enter number">
                             </div>
                             <!-- coach -->
                             <div class="inline-flex ml-20 mb-5">
-                                <h2 class=" text-xl text-bold">Coach</h2>
-                                <input id="coach-field" class="ml-3 border-2 border-black" type="text">
+                                <h2 class="ml-20 text-xl font-bold">Coach</h2>
+                                <input id="coach-field" class="ml-4 border-2 border-black pl-2 font-semibold"
+                                    type="text" placeholder="please enter number">
                             </div>
                             <!-- total calculation button -->
-                            <button id="btn-calculate-total" class="btn btn-wide ml-20">Calculate Total</button>
+                            <button id="btn-calculate-total" class="btn btn-wide ml-40">Calculate Total</button>
                             <!-- total calculation -->
                             <div class="ml-20 mt-3 text-xl">
-                                <p>Total: <span>$</span><span id="total"></span></p>
+                                <p class="p-2 font-bold ml-20">Total: <span>$</span><span id="total"></span></p>
                             </div>
                         </div>
                     </div>
