@@ -19,7 +19,7 @@ function playerList(element) {
         orderList.appendChild(li);
         element.disabled = true;
     }
-    console.log(playerTotal.length);
+    // console.log(playerTotal.length);
 
     const selectedPlayer = document.getElementById('selected-player');
     selectedPlayer.innerText = playerTotal.length;
@@ -28,9 +28,7 @@ function playerList(element) {
 const playerTotal = [];
 
 
-document.getElementById('btn-01').addEventListener('click', function () {
 
-})
 
 
 
